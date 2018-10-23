@@ -188,7 +188,8 @@ blockquote span {
 	
 #header_text span{
 	color: #E1103A;
-	font-size: 1.1em;
+	font-size: 1.3em;
+	margin: 10px 10px 0 0;
 }
 	
 #footer{
@@ -334,7 +335,9 @@ blockquote span {
 	text-decoration : none || underline || blink || overline || line-through
 */
 }
-
+.highlight {
+	color: blue;
+}
 
 #interestTable {
   border-collapse: collapse;
