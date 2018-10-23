@@ -19,7 +19,7 @@ body{
 	padding-bottom: 25px;
 }
 
-a  {
+a {
 	color:#394132;
 	text-decoration:none;	
 }
@@ -337,6 +337,7 @@ blockquote span {
 }
 .highlight {
 	color: blue;
+	font-weight: bold;
 }
 
 #interestTable {
