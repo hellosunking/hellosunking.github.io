@@ -338,6 +338,7 @@ blockquote span {
 .highlight {
 	color: blue;
 	font-weight: bold;
+	display: inline;
 }
 
 #interestTable {
