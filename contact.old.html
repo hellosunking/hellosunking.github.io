@@ -8,11 +8,6 @@
 <link rel="shortcut icon" href="/favicon.ico" />
 <title>Kun Sun -- Bioinformatician@CUHK</title>
 <link href="css/style.css" rel="stylesheet" type="text/css" />
-<!-- Styles for Google map -->
-<style type="text/css">
-	.mapouter{text-align:right;height:500px;width:600px;}
-	.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}
-</style>
 </head>
 <body>
 	<div id="container">
@@ -51,6 +46,34 @@
 		</td>
 		<td id="mc_container" align="left" valign="top">
 
+<!-- Scripts for Google map -->
+<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAHce-dC78JpQ3MwCu1hGt2Jpria9Ky0mU&sensor=false"></script>
+<script>
+var myCenter= new google.maps.LatLng(22.379234,114.200563);
+
+var myAddr = "Rm503, Li Ka Shing Institute of Health Sciences,<br />Prince of Wales Hospital, The Chinese University of Hong Kong<br />CityOne, Shatin, Hong Kong";
+
+function initialize()
+{
+	var mapProp = {
+	  center:myCenter,
+	  zoom:16,
+	  mapTypeId:google.maps.MapTypeId.ROADMAP
+	  };
+	var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+	var marker=new google.maps.Marker({
+	  position:myCenter,
+	  });
+	marker.setMap(map);
+	var infowindow = new google.maps.InfoWindow({
+	  content:myAddr
+	  });
+	google.maps.event.addListener(marker, 'click', function() {
+	  infowindow.open(map,marker);
+	  });
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
 
 
 <div id="location">Sun Kun &gt;&gt; Contact</div>
@@ -80,14 +103,9 @@
 </p>
 </blockquote>
 <br /><br />
-
 <!-- Google map -->
-<div class="mapouter">
-	<div class="gmap_canvas">
-		<iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Li+Ka+Shing+Institute+of+Health+Sciences&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
-		</iframe>
-	</div>
-</div>
+<div id="googleMap" style="width:640px;height:480px;"></div>
+
 
 </div>
 
