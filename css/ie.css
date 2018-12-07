@@ -1,26 +1,24 @@
-#header
-	{
-	width:770px;
-	height:100px;
-	background-color:#373737;
-	}
-	
-#header_text
-	{
-	width:310px;
-	color:#fff;
-	font-size:2em;
-	font-family:Georgia,Arial,'Trebuchet MS', serif;
-	margin-left:auto;
-	margin-right:auto;
-	padding:40px 0px 10px 0px;	
-	}
-	
-#header_text span
-	{
-	padding-right:.1em;
-	}
-
-#container{
-	border-right:4px solid #222;
+#header {
+width: 770px;
+height: 100px;
+background-color: #373737;
 }
+
+#header_text {
+width: 310px;
+color: #fff;
+font-size: 2em;
+font-family: Georgia,Arial,Serif;
+margin-left: auto;
+margin-right: auto;
+padding: 40px 0px 10px 0px;	
+}
+
+#header_text span {
+padding-right: 0.1em;
+}
+
+#container {
+border-right: 4px solid #222;
+}
+
