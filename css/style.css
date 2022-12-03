@@ -40,6 +40,7 @@ h1,h2,h3{
 	padding-bottom: 8px;
 	font-family: Georgia, serif;
 }
+
 h1{
 	padding-top:0px;
 	font-size:25px;
@@ -78,6 +79,7 @@ p{
 	padding-top:8px;
 	padding-bottom:8px;
 }
+
 hr{
 	border:0;
 	background-color:#9D9DA1;
@@ -86,6 +88,7 @@ hr{
 	margin:0px auto;
 	text-align:center;
 }
+
 img{
 	border:none;
 }
@@ -148,6 +151,7 @@ blockquote span {
 * html #container{
 	padding-left:2px;
 }
+
 #c_container{
 	background:#FFFFFF;
 	margin-top:-5px;
@@ -173,7 +177,7 @@ blockquote span {
 	border-top: 1px solid #404040;
 	border-bottom: 1px solid #404040;
 }
-	
+
 #header_text {
 	width: 500px;
 	color: #007FFF;
@@ -191,13 +195,14 @@ blockquote span {
 	font-size: 1.3em;
 	margin: 10px 10px 0 0;
 }
-	
+
 #footer{
 	width:900px;
 	margin-left:auto;
 	margin-right:auto;
 	background-color:#4F6577;
 }
+
 #footer_text{
 	width: 500px;
 	color: #ffffff;
